@@ -1,0 +1,9 @@
+config BR2_PACKAGE_MYAPP
+    bool "My Kernel Module"
+    depends on BR2_LINUX_KERNEL
+    default n
+    help
+      My Linux Kernel Module.
+
+      Prints HI when loaded.
+      Prints BYE when unloaded.
